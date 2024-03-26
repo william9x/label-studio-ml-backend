@@ -22,7 +22,7 @@ RUN pip -q install -e .
 RUN mkdir weights
 WORKDIR /app/Grounding-DINO-Batch-Inference/GroundingDINO/weights
 
-RUN wget -q https://github.com/IDEA-Research/GroundingDINO/releases/download/v0.1.0-alpha/groundingdino_swint_ogc.pth
+RUN wget -q https://github.com/IDEA-Research/GroundingDINO/releases/download/v0.1.0-alpha2/groundingdino_swinb_cogcoor.pth
 
 WORKDIR /app
 RUN wget -q https://github.com/ChaoningZhang/MobileSAM/raw/master/weights/mobile_sam.pt
@@ -32,4 +32,4 @@ RUN pip install olefile
 COPY . ./
 
 
-CMD gunicorn --preload --bind :$PORT --workers $WORKERS --threads $THREADS --timeout 0 _wsgi:app
+CMD gunicorn --bind :$PORT --workers $WORKERS --threads $THREADS --timeout 0 _wsgi:app

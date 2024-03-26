@@ -1,0 +1,3 @@
+[submodule "label_studio_ml/examples/grounding_dino/Grounding-DINO-Batch-Inference"]
+	path = label_studio_ml/examples/grounding_dino/Grounding-DINO-Batch-Inference
+	url = https://github.com/yuwenmichael/Grounding-DINO-Batch-Inference.git

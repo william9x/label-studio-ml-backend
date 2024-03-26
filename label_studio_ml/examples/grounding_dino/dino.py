@@ -24,7 +24,7 @@ predict_batch = getattr(batchutil, "predict_batch")
 
 
 # LOADING THE MODEL
-groundingdino_model = load_model("./Grounding-DINO-Batch-Inference/GroundingDINO/groundingdino/config/GroundingDINO_SwinT_OGC.py", "./Grounding-DINO-Batch-Inference/GroundingDINO/weights/groundingdino_swint_ogc.pth")
+groundingdino_model = load_model("./Grounding-DINO-Batch-Inference/GroundingDINO/groundingdino/config/GroundingDINO_SwinB_cfg.py", "./Grounding-DINO-Batch-Inference/GroundingDINO/weights/groundingdino_swinb_cogcoor.pth")
 
 
 BOX_THRESHOLD = os.environ.get("BOX_THRESHOLD", 0.3)
